@@ -3,6 +3,7 @@ package com.kashish.astrologer_crm.service;
 import com.kashish.astrologer_crm.dto.request.AstrologerRequestDto;
 import com.kashish.astrologer_crm.dto.response.AstrologerResponseDto;
 import com.kashish.astrologer_crm.entity.astrologer;
+import com.kashish.astrologer_crm.exception.ResourceNotFoundException;
 import com.kashish.astrologer_crm.repository.astrologerRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -57,14 +58,14 @@ public class astrologerService {
 
     public AstrologerResponseDto getAstrologerById(Long id){
         astrologer astro = repo.findById(id)
-                .orElseThrow(()->new RuntimeException("Astrologer not found"));
+                .orElseThrow(()->new ResourceNotFoundException("Astrologer not found"));
 
         return mapToResponse(astro);
     }
 
     public AstrologerResponseDto updateAstrologer(Long id,AstrologerRequestDto request){
         astrologer astro = repo.findById(id)
-                .orElseThrow(()->new RuntimeException("Astrologer not found"));
+                .orElseThrow(()->new ResourceNotFoundException("Astrologer not found"));
 
         astro.setName(request.getName());
         astro.setSpecialization(request.getSpecialization());
@@ -80,7 +81,7 @@ public class astrologerService {
 
     public void deleteAstrologer(Long id){
         if(!repo.existsById(id)){
-            throw new RuntimeException("Astrologer Not found");
+            throw new ResourceNotFoundException("Astrologer Not found");
 
         }
         repo.deleteById(id);
