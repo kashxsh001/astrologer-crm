@@ -2,7 +2,7 @@ package com.kashish.astrologer_crm.controller;
 
 import com.kashish.astrologer_crm.dto.request.AppointmentRequestDto;
 import com.kashish.astrologer_crm.dto.response.AppointmentResponseDto;
-import com.kashish.astrologer_crm.entity.Status;
+import com.kashish.astrologer_crm.enums.Status;
 import com.kashish.astrologer_crm.service.AppointmentService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

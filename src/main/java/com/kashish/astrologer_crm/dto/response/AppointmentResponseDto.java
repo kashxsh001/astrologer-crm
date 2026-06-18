@@ -1,6 +1,6 @@
 package com.kashish.astrologer_crm.dto.response;
 
-import com.kashish.astrologer_crm.entity.Status;
+import com.kashish.astrologer_crm.enums.Status;
 import lombok.Builder;
 import lombok.Data;
 

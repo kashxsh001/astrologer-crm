@@ -1,6 +1,6 @@
 package com.kashish.astrologer_crm.dto.response;
 
-import com.kashish.astrologer_crm.entity.Gender;
+import com.kashish.astrologer_crm.enums.Gender;
 import lombok.Builder;
 import lombok.Data;
 

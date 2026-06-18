@@ -1,6 +1,6 @@
 package com.kashish.astrologer_crm.dto.request;
 
-import com.kashish.astrologer_crm.entity.Gender;
+import com.kashish.astrologer_crm.enums.Gender;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

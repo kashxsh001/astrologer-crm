@@ -1,5 +1,6 @@
 package com.kashish.astrologer_crm.entity;
 
+import com.kashish.astrologer_crm.enums.Status;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

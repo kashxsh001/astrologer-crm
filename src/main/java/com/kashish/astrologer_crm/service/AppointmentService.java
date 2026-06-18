@@ -4,7 +4,7 @@ import com.kashish.astrologer_crm.dto.request.AppointmentRequestDto;
 import com.kashish.astrologer_crm.dto.response.AppointmentResponseDto;
 import com.kashish.astrologer_crm.entity.Appointment;
 import com.kashish.astrologer_crm.entity.Client;
-import com.kashish.astrologer_crm.entity.Status;
+import com.kashish.astrologer_crm.enums.Status;
 import com.kashish.astrologer_crm.entity.astrologer;
 import com.kashish.astrologer_crm.exception.ResourceNotFoundException;
 import com.kashish.astrologer_crm.repository.AppointmentRepo;

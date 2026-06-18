@@ -1,4 +1,4 @@
-package com.kashish.astrologer_crm.entity;
+package com.kashish.astrologer_crm.enums;
 
 public enum Status {
     PENDING,
